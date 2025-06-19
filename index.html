@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicação de Tags HTML</title>
+</head>
+<style>
+    :root {
+      --verde-petroleo: #0E5C62;
+      --roxo: #7A4A9F;
+      --vinho: #BF2761;
+      --amarelo: #F9BA44;
+      --vermelho: #DD3746;
+      --bege: #F6F0E8;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bege);
+      display: flex;
+    }
+
+    nav {
+      width: 240px;
+      background-color: var(--verde-petroleo);
+      color: white;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+      padding: 24px 16px;
+    }
+
+    nav h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: var(--amarelo);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin-bottom: 12px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--amarelo);
+    }
+
+    main {
+      margin-left: 260px;
+      padding: 40px 30px;
+      flex: 1;
+    }
+
+    h1 {
+      color: var(--vinho);
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    section {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border-left: 5px solid var(--roxo);
+    }
+
+    section h2 {
+      color: var(--roxo);
+      margin-top: 0;
+    }
+
+    p, li {
+      font-size: 16px;
+      color: #333;
+    }
+
+    code {
+      background-color: var(--bege);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+
+    mark {
+      background-color: var(--amarelo);
+      color: black;
+    }
+
+    blockquote {
+      border-left: 4px solid var(--vinho);
+      margin: 1em 0;
+      padding-left: 16px;
+      color: #555;
+      font-style: italic;
+    }
+
+    a {
+      color: var(--vinho);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px dashed var(--vermelho);
+      margin: 1em 0;
+    }
+</style>
+<body>
+    <nav>
+    <h2>Índice</h2>
+    <ul>
+      <li><a href="#h-tags">&lt;h1&gt; até &lt;h6&gt;</a></li>
+      <li><a href="#p">&lt;p&gt;</a></li>
+      <li><a href="#mark">&lt;mark&gt;</a></li>
+      <li><a href="#small">&lt;small&gt;</a></li>
+      <li><a href="#i">&lt;i&gt;</a></li>
+      <li><a href="#u">&lt;u&gt;</a></li>
+      <li><a href="#strong">&lt;strong&gt;</a></li>
+      <li><a href="#lists">&lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;</a></li>
+      <li><a href="#a">&lt;a&gt;</a></li>
+      <li><a href="#hr">&lt;hr&gt;</a></li>
+      <li><a href="#sub-sup">&lt;sub&gt; e &lt;sup&gt;</a></li>
+      <li><a href="#blockquote">&lt;blockquote&gt;</a></li>
+      <li><a href="#font">&lt;font&gt;</a></li>
+      <li><a href="#del">&lt;del&gt;</a></li>
+      <li><a href="#abbr">&lt;abbr&gt;</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Guia de Tags HTML</h1>
+
+    <section id="h-tags">
+      <h2>&lt;h1&gt; até &lt;h6&gt;</h2>
+      <p>Usadas para títulos, do mais importante (<code>&lt;h1&gt;</code>) ao menos importante (<code>&lt;h6&gt;</code>):</p>
+      <h1>Título h1</h1>
+      <h2>Título h2</h2>
+      <h3>Título h3</h3>
+      <h4>Título h4</h4>
+      <h5>Título h5</h5>
+      <h6>Título h6</h6>
+    </section>
+
+    <section id="p">
+      <h2>&lt;p&gt;</h2>
+      <p>Define um parágrafo de texto.</p>
+      <p>Este é um exemplo de parágrafo.</p>
+    </section>
+
+    <section id="mark">
+      <h2>&lt;mark&gt;</h2>
+      <p>Destaca o texto como se estivesse marcado com marca-texto.</p>
+      <p>Texto com <mark>destaque</mark>.</p>
+    </section>
+
+    <section id="small">
+      <h2>&lt;small&gt;</h2>
+      <p>Exibe o texto em um tamanho menor.</p>
+      <p>Texto normal <small>e texto pequeno</small>.</p>
+    </section>
+
+    <section id="i">
+      <h2>&lt;i&gt;</h2>
+      <p>Texto em itálico.</p>
+      <p>Exemplo: <i>palavra em itálico</i>.</p>
+    </section>
+
+    <section id="u">
+      <h2>&lt;u&gt;</h2>
+      <p>Sublinha o texto.</p>
+      <p>Exemplo: <u>texto sublinhado</u>.</p>
+    </section>
+
+    <section id="strong">
+      <h2>&lt;strong&gt;</h2>
+      <p>Destaca o texto com ênfase forte (semântico e visual).</p>
+      <p><strong>Texto importante</strong>.</p>
+    </section>
+
+    <section id="lists">
+      <h2>&lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;</h2>
+      <p>Listas ordenadas e não ordenadas.</p>
+      <p>Lista ordenada:</p>
+      <ol>
+        <li>Primeiro</li>
+        <li>Segundo</li>
+      </ol>
+      <p>Lista não ordenada:</p>
+      <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+      </ul>
+    </section>
+
+    <section id="a">
+      <h2>&lt;a&gt;</h2>
+      <p>Cria um link.</p>
+      <p><a href="https://www.example.com" target="_blank">Clique aqui</a> para visitar um site.</p>
+    </section>
+
+    <section id="hr">
+      <h2>&lt;hr&gt;</h2>
+      <p>Insere uma linha horizontal de separação.</p>
+      <hr />
+    </section>
+
+    <section id="sub-sup">
+      <h2>&lt;sub&gt; e &lt;sup&gt;</h2>
+      <p>Texto subescrito e sobrescrito.</p>
+      <p>Fórmula química: H<sub>2</sub>O</p>
+      <p>Expoente: 2<sup>3</sup> = 8</p>
+    </section>
+
+    <section id="blockquote">
+      <h2>&lt;blockquote&gt;</h2>
+      <p>Destaca uma citação longa.</p>
+      <blockquote>
+        "Ser ou não ser, eis a questão." — Shakespeare
+      </blockquote>
+    </section>
+
+    <section id="font">
+      <h2>&lt;font&gt; <em>(obsoleta)</em></h2>
+      <p>Usada para definir cor, fonte e tamanho do texto, mas está obsoleta no HTML5. Exemplo:</p>
+      <p><font color="red" size="4" face="Arial">Texto com a tag &lt;font&gt;</font></p>
+    </section>
+
+    <section id="del">
+      <h2>&lt;del&gt;</h2>
+      <p>Indica texto removido ou riscado.</p>
+      <p>Este produto custava <del>R$100,00</del> agora custa R$80,00.</p>
+    </section>
+
+    <section id="abbr">
+      <h2>&lt;abbr&gt;</h2>
+      <p>Define uma abreviação com significado visível ao passar o mouse.</p>
+      <p><abbr title="HyperText Markup Language">HTML</abbr> é uma linguagem de marcação.</p>
+    </section>
+  </main>
+</body>
+</html>
